@@ -142,11 +142,11 @@ Production trajectory files (`.gro`, ~20 MB each) are not included in this repos
 If you use this code or data in your research, please cite:
 
 ```bibtex
-@article{das2025morphology,
-  author = {Das, Bibhas and Mondal, Anirban},
+@article{das2026morphology,
+  author = {Das, Bibhas; Sewak, Ram and Mondal, Anirban},
   title = {Interpretable Morphology--Property Relationships in PM6:NFA Organic Solar Cells via MD Simulations and Symbolic Regression},
   journal = {},
-  year = {2025},
+  year = {2026},
   volume = {},
   pages = {},
   doi = {},
@@ -164,6 +164,7 @@ For questions, issues, or collaborations:
 
 - **Anirban Mondal** (Principal Investigator): amondal@iitgn.ac.in
 - **Bibhas Das** (Lead Developer): dasbibhas@iitgn.ac.in
+- **Ram Sewak** (Lead Developer): ram.sewak@iitgn.ac.in
 
 **GitHub Issues**: [Open an issue](https://github.com/Bib569/PM6-NFA-Morphology-SISSO/issues)
 
