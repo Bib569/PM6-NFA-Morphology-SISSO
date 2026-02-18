@@ -1,0 +1,26 @@
+# c0 + a0 * ((Inertia^3) + (Backbone_Angle * Free_Volume)) + a1 * exp((|Plane_Angle - Backbone_Angle|)) + a2 * (|(Inertia * Sphericity) - (Plane_Angle + Backbone_Angle)|) + a3 * ((Density / Free_Volume) / (Sphericity^6))
+# Property Label: $Voc$; Unit of the Property: Unitless
+# RMSE: 0.000557929698257069; Max AE: 0.00104888050714147
+# Coefficients
+# Task   a0                      a1                      a2                      a3                      c0
+# all ,  2.549511303365385e-10,  1.403771659835237e-32, -1.091069279013170e-03, -7.887450019864764e+02,  1.264926108293341e+00, 
+# Feature Rung, Units, and Expressions
+# 0;  2; Unitless;                                         3|cb|4|1|mult|add; ((Inertia^3) + (Backbone_Angle * Free_Volume)); $\left(\left(Inertia^3\right) + \left(Backbone_{Angle} Free_{Volume}\right)\right)$; ((Inertia).^3 + (Backbone_Angle .* Free_Volume)); Inertia,Backbone_Angle,Free_Volume
+# 1;  2; Unitless;                                         5|4|abd|exp; exp((|Plane_Angle - Backbone_Angle|)); $\left(\exp{ \left(\left|Plane_{Angle} - Backbone_{Angle}\right|\right) }\right)$; exp(abs(Plane_Angle - Backbone_Angle)); Plane_Angle,Backbone_Angle
+# 2;  2; Unitless;                                         3|0|mult|5|4|add|abd; (|(Inertia * Sphericity) - (Plane_Angle + Backbone_Angle)|); $\left(\left|\left(Inertia Sphericity\right) - \left(Plane_{Angle} + Backbone_{Angle}\right)\right|\right)$; abs((Inertia .* Sphericity) - (Plane_Angle + Backbone_Angle)); Inertia,Sphericity,Plane_Angle,Backbone_Angle
+# 3;  2; Unitless;                                         7|1|div|0|sp|div; ((Density / Free_Volume) / (Sphericity^6)); $\left(\frac{ \left(\frac{ Density }{ Free_{Volume} } \right) }{ \left(Sphericity^6\right) } \right)$; ((Density ./ Free_Volume) ./ (Sphericity).^6); Density,Free_Volume,Sphericity
+# Number of Samples Per Task
+# Task, n_samples               
+# all , 10                    
+
+# Sample ID , Property Value        ,  Property Value (EST) ,  Feature 0 Value      ,  Feature 1 Value      ,  Feature 2 Value      ,  Feature 3 Value      
+19.38878261 ,  9.370000000000001e-01,  9.376175532855405e-01,  1.632676464115149e+08,  1.000000000000000e+00,  2.976859000000002e+01,  4.265690826970622e-04
+14.47732143 ,  9.280000000000000e-01,  9.269511194928586e-01,  1.599513967471641e+08,  4.851651954097903e+08,  2.392316780000002e+01,  4.471064081149886e-04
+15.2355814  ,  9.270000000000000e-01,  9.269999999991692e-01,  1.464589209490778e+08,  2.515438670919167e+30,  3.058224440000001e+01,  4.782402964491474e-04
+9.6645      ,  9.230000000000000e-01,  9.239174344041075e-01,  1.819915617267308e+08,  4.851651954097903e+08,  5.778187199999991e+00,  4.831767234797676e-04
+16.30223214 ,  8.800000000000000e-01,  8.804030820240404e-01,  1.551599825297527e+08,  5.184705528587072e+21,  5.383693160000001e+01,  4.631933212962667e-04
+16.54090909 ,  8.660000000000000e-01,  8.662053626487793e-01,  1.370368666728685e+08,  2.353852668370200e+17,  1.754595350000000e+01,  5.255368944611756e-04
+16.72992248 ,  9.080000000000000e-01,  9.073066515093104e-01,  1.492004434826559e+08,  4.851651954097903e+08,  9.956034899999992e+00,  4.878579942913809e-04
+16.87173913 ,  8.980000000000000e-01,  8.976892036882027e-01,  2.319506408955359e+08,  1.068647458152446e+13,  4.316957470000000e+01,  4.808550101557519e-04
+12.35086207 ,  8.750000000000000e-01,  8.749124580323840e-01,  1.676634689495324e+08,  2.202646579480672e+04,  3.939407739999999e+01,  4.941748886876135e-04
+17.45157025 ,  8.700000000000000e-01,  8.699971349156068e-01,  1.715296560770360e+08,  1.000000000000000e+00,  4.455551720000000e+01,  4.945166005122107e-04

@@ -1,0 +1,27 @@
+# c0 + a0 * ((Inertia / Free_Volume) / (Mean_Distance + Backbone_Angle)) + a1 * (|(Sphericity / Density) - (Silhouette_Score^3)|) + a2 * (|sqrt(Silhouette_Score) - (Density - Silhouette_Score)|) + a3 * (|(Inertia * Sphericity) - (Plane_Angle + Backbone_Angle)|) + a4 * (ln(Free_Volume) * cbrt(Sphericity))
+# Property Label: $Jsc$; Unit of the Property: Unitless
+# RMSE: 0.0115189263964833; Max AE: 0.0257304267041363
+# Coefficients
+# Task   a0                      a1                      a2                      a3                      a4                      c0
+# all , -1.393474181202443e+05,  1.579211720722146e+01, -2.109153890740856e+01,  2.136051038350369e-02, -1.996457665448787e+01,  2.264760982683957e+02, 
+# Feature Rung, Units, and Expressions
+# 0;  2; Unitless;                                         3|1|div|6|4|add|div; ((Inertia / Free_Volume) / (Mean_Distance + Backbone_Angle)); $\left(\frac{ \left(\frac{ Inertia }{ Free_{Volume} } \right) }{ \left(Mean_{Distance} + Backbone_{Angle}\right) } \right)$; ((Inertia ./ Free_Volume) ./ (Mean_Distance + Backbone_Angle)); Inertia,Free_Volume,Mean_Distance,Backbone_Angle
+# 1;  2; Unitless;                                         0|7|div|2|cb|abd; (|(Sphericity / Density) - (Silhouette_Score^3)|); $\left(\left|\left(\frac{ Sphericity }{ Density } \right) - \left(Silhouette_{Score}^3\right)\right|\right)$; abs((Sphericity ./ Density) - (Silhouette_Score).^3); Sphericity,Density,Silhouette_Score
+# 2;  2; Unitless;                                         2|sqrt|7|2|sub|abd; (|sqrt(Silhouette_Score) - (Density - Silhouette_Score)|); $\left(\left|\left(\sqrt{ Silhouette_{Score} }\right) - \left(Density - Silhouette_{Score}\right)\right|\right)$; abs(sqrt(Silhouette_Score) - (Density - Silhouette_Score)); Silhouette_Score,Density,Silhouette_Score
+# 3;  2; Unitless;                                         3|0|mult|5|4|add|abd; (|(Inertia * Sphericity) - (Plane_Angle + Backbone_Angle)|); $\left(\left|\left(Inertia Sphericity\right) - \left(Plane_{Angle} + Backbone_{Angle}\right)\right|\right)$; abs((Inertia .* Sphericity) - (Plane_Angle + Backbone_Angle)); Inertia,Sphericity,Plane_Angle,Backbone_Angle
+# 4;  2; Unitless;                                         1|log|0|cbrt|mult; (ln(Free_Volume) * cbrt(Sphericity)); $\left(\left(\ln{ Free_{Volume} }\right) \left(\sqrt[3]{ Sphericity }\right)\right)$; (log(Free_Volume) .* nthroot(Sphericity, 3)); Free_Volume,Sphericity
+# Number of Samples Per Task
+# Task, n_samples               
+# all , 10                    
+
+# Sample ID , Property Value        ,  Property Value (EST) ,  Feature 0 Value      ,  Feature 1 Value      ,  Feature 2 Value      ,  Feature 3 Value      ,  Feature 4 Value      
+19.38878261 ,  2.464000000000000e+01,  2.465341659469212e+01,  4.609499881102988e-06,  1.667934508927804e-02,  2.869520235593415e-02,  2.976859000000002e+01,  1.009159431350112e+01
+14.47732143 ,  2.467000000000000e+01,  2.464426957329587e+01,  3.693628186878422e-06,  7.809248624227827e-03,  3.981892021045041e-02,  2.392316780000002e+01,  1.007342294120003e+01
+15.2355814  ,  2.539000000000000e+01,  2.539731230478182e+01,  4.835493996814218e-06,  8.659661719695455e-05,  2.696887252546132e-02,  3.058224440000001e+01,  1.004232549972849e+01
+9.6645      ,  2.539000000000000e+01,  2.539949863311948e+01,  3.133312100519274e-06,  2.799154074725274e-02,  3.185645241528290e-02,  5.778187199999991e+00,  1.004446792280123e+01
+16.30223214 ,  2.585000000000000e+01,  2.584396306524561e+01,  3.856911424335202e-06,  3.935257482142113e-02,  5.240067956381678e-02,  5.383693160000001e+01,  1.005585652364784e+01
+16.54090909 ,  2.660000000000000e+01,  2.658589516319285e+01,  4.022529131915067e-06,  1.976715633997156e-02,  1.333511016548783e-02,  1.754595350000000e+01,  1.000448821379178e+01
+16.72992248 ,  2.533000000000000e+01,  2.533430097293219e+01,  3.735475246388023e-06,  1.084287932676387e-02,  5.096310208760813e-02,  9.956034899999992e+00,  1.001425072427035e+01
+16.87173913 ,  2.598000000000000e+01,  2.597858538959666e+01,  4.314625750679807e-06,  6.274519330461195e-02,  7.432268941360920e-02,  4.316957470000000e+01,  1.002984977271184e+01
+12.35086207 ,  2.662000000000000e+01,  2.662776213864883e+01,  3.256515821563131e-06,  5.254376352732459e-03,  1.635508432942001e-02,  3.939407739999999e+01,  1.001644332098013e+01
+17.45157025 ,  2.571000000000000e+01,  2.571499616449493e+01,  2.572953423497101e-06,  4.570746335637921e-02,  8.070067956381677e-02,  4.455551720000000e+01,  1.003647689798809e+01

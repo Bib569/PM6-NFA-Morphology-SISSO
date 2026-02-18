@@ -1,0 +1,9 @@
+Iteration,Descriptor,VIF
+1,Total,1000000.0
+2,vdW_surf_area,925943.9736002355
+3,Dispersion,698849.8078922565
+4,Dimer_Volume,1000000.0
+5,Electrostatic,1000000.0
+6,Silhouette_Score,35.23556544549214
+7,Free_Volume,10.984213981190344
+8,Mean_Distance,5.5838863187657655

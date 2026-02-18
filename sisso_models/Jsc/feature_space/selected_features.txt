@@ -1,0 +1,111 @@
+# FEAT_ID     Feature Postfix Expression (RPN)
+0             4|1|sub|0|sp|mult
+1             0|sp|5|1|abd|mult
+2             3|1|abd|0|sp|mult
+3             1|sqrt|0|cb|mult
+4             1|cbrt|0|sq|mult
+5             1|log|0|nexp|div
+6             0|nexp|1|log|div
+7             1|log|0|cbrt|mult
+8             0|sp|1|7|div|mult
+9             7|1|div|0|sp|div
+#-----------------------------------------------------------------------
+0             4|1|sub|0|sp|mult
+1             0|sp|5|1|abd|mult
+2             3|1|abd|0|sp|mult
+3             1|sqrt|0|cb|mult
+4             1|cbrt|0|sq|mult
+5             1|log|0|nexp|div
+6             0|nexp|1|log|div
+7             1|log|0|cbrt|mult
+8             0|sp|1|7|div|mult
+9             7|1|div|0|sp|div
+#-----------------------------------------------------------------------
+10            3|2|div|5|4|mult|mult
+11            2|5|div|4|3|mult|div
+12            2|cb|5|4|mult|div
+13            2|sp|5|cb|div
+14            2|sp|5|4|mult|div
+15            2|sp|5|sq|div
+16            5|4|mult|2|cb|div
+17            2|cb|5|3|div|abd
+18            3|0|mult|5|4|add|abd
+19            5|2|div|nexp
+#-----------------------------------------------------------------------
+10            3|2|div|5|4|mult|mult
+11            2|5|div|4|3|mult|div
+12            2|cb|5|4|mult|div
+13            2|sp|5|cb|div
+14            2|sp|5|4|mult|div
+15            2|sp|5|sq|div
+16            5|4|mult|2|cb|div
+17            2|cb|5|3|div|abd
+18            3|0|mult|5|4|add|abd
+19            5|2|div|nexp
+#-----------------------------------------------------------------------
+20            2|cb|6|5|div|add
+21            7|5|mult|nexp
+22            5|2|mult|exp
+23            3|1|mult|2|cb|mult
+24            2|log|3|1|mult|div
+25            3|1|mult|2|sq|mult
+26            3|6|div|nexp
+27            5|4|mult|sp
+28            3|1|mult|2|0|sub|mult
+29            3|1|mult|2|log|div
+#-----------------------------------------------------------------------
+20            2|cb|6|5|div|add
+21            7|5|mult|nexp
+22            5|2|mult|exp
+23            3|1|mult|2|cb|mult
+24            2|log|3|1|mult|div
+25            3|1|mult|2|sq|mult
+26            3|6|div|nexp
+27            5|4|mult|sp
+28            3|1|mult|2|0|sub|mult
+29            3|1|mult|2|log|div
+#-----------------------------------------------------------------------
+30            4|2|add|6|5|abd|abd
+31            5|6|div|5|4|sub|abd
+32            7|sp|5|4|sub|abd
+33            7|cbrt|5|4|div|abd
+34            4|sqrt|5|4|sub|abd
+35            5|sqrt|5|4|sub|abd
+36            4|6|div|5|4|sub|abd
+37            7|3|mult|6|cb|abd
+38            2|sqrt|7|2|sub|abd
+39            0|7|div|2|cb|abd
+#-----------------------------------------------------------------------
+30            4|2|add|6|5|abd|abd
+31            5|6|div|5|4|sub|abd
+32            7|sp|5|4|sub|abd
+33            7|cbrt|5|4|div|abd
+34            4|sqrt|5|4|sub|abd
+35            5|sqrt|5|4|sub|abd
+36            4|6|div|5|4|sub|abd
+37            7|3|mult|6|cb|abd
+38            2|sqrt|7|2|sub|abd
+39            0|7|div|2|cb|abd
+#-----------------------------------------------------------------------
+40            3|sq|6|4|div|mult
+41            4|3|add|4|1|mult|div
+42            6|3|mult|4|1|mult|div
+43            3|cb|2|4|div|mult
+44            4|3|abd|4|2|div|sub
+45            3|1|div|6|4|add|div
+46            3|7|div|4|2|div|sub
+47            4|3|abd|2|1|mult|mult
+48            3|1|div|4|2|mult|div
+49            3|sq|4|1|mult|div
+#-----------------------------------------------------------------------
+40            3|sq|6|4|div|mult
+41            4|3|add|4|1|mult|div
+42            6|3|mult|4|1|mult|div
+43            3|cb|2|4|div|mult
+44            4|3|abd|4|2|div|sub
+45            3|1|div|6|4|add|div
+46            3|7|div|4|2|div|sub
+47            4|3|abd|2|1|mult|mult
+48            3|1|div|4|2|mult|div
+49            3|sq|4|1|mult|div
+#-----------------------------------------------------------------------

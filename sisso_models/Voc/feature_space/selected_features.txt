@@ -1,0 +1,56 @@
+# FEAT_ID     Feature Postfix Expression (RPN)
+0             2|cb|7|0|div|add
+1             0|sp|1|2|div|mult
+2             0|sp|6|1|mult|mult
+3             7|0|div|7|2|add|add
+4             4|3|div|7|0|div|add
+5             1|log|0|7|div|mult
+6             7|0|div|1|log|div
+7             2|1|div|0|sp|div
+8             0|sp|1|7|div|mult
+9             7|1|div|0|sp|div
+#-----------------------------------------------------------------------
+10            4|sp|5|sq|mult
+11            2|sp|sp
+12            2|sp|2|nexp|add
+13            4|cb|5|sq|mult
+14            5|4|div|7|abd
+15            7|2|add|6|cbrt|abd
+16            0|exp|5|4|div|abd
+17            5|4|mult|sp
+18            4|sp|5|cb|mult
+19            3|0|mult|5|4|add|abd
+#-----------------------------------------------------------------------
+20            3|sqrt|5|4|sub|abd
+21            6|0|div|5|4|sub|abd
+22            1|log|5|4|sub|abd
+23            6|5|abd|6|4|add|abd
+24            6|4|abd|5|7|div|abd
+25            5|7|div|exp
+26            6|5|add|7|4|mult|abd
+27            5|4|sub|sp
+28            4|2|div|nexp
+29            5|4|abd|exp
+#-----------------------------------------------------------------------
+30            3|cb|4|1|mult|mult
+31            3|cb|4|1|mult|add
+32            3|2|mult|4|3|add|abd
+33            4|3|mult|2|cb|div
+34            4|3|add|0|sq|div
+35            4|3|mult|2|sp|div
+36            0|sq|4|3|add|div
+37            3|1|mult|4|3|mult|mult
+38            4|exp|5|cb|div
+39            4|exp|5|sp|div
+#-----------------------------------------------------------------------
+40            4|7|div|5|4|abd|abd
+41            3|4|div|nexp
+42            4|2|mult|1|7|div|mult
+43            4|log|7|sp|abd
+44            4|1|mult|7|sp|div
+45            4|1|mult|7|2|sub|div
+46            4|3|div|sp
+47            7|cb|7|log|div
+48            7|log|7|cb|div
+49            6|4|mult|5|3|add|abd
+#-----------------------------------------------------------------------

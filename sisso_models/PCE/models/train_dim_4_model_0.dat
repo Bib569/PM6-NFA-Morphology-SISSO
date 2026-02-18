@@ -1,0 +1,26 @@
+# c0 + a0 * (sqrt(Backbone_Angle) * (Silhouette_Score / Inertia)) + a1 * (|(Density^6) - (Mean_Distance - Sphericity)|) + a2 * (|(Density * Inertia) - (Mean_Distance^3)|) + a3 * ((Silhouette_Score^2) / (Plane_Angle * Free_Volume))
+# Property Label: $PCE$; Unit of the Property: Unitless
+# RMSE: 0.0153873190202878; Max AE: 0.0324308957458861
+# Coefficients
+# Task   a0                      a1                      a2                      a3                      c0
+# all , -5.575781117439852e+01, -1.325287876240195e+00, -2.929083106556096e-02,  1.579897365027625e+08,  1.994253579469364e+01, 
+# Feature Rung, Units, and Expressions
+# 0;  2; Unitless;                                         4|sqrt|2|3|div|mult; (sqrt(Backbone_Angle) * (Silhouette_Score / Inertia)); $\left(\left(\sqrt{ Backbone_{Angle} }\right) \left(\frac{ Silhouette_{Score} }{ Inertia } \right)\right)$; (sqrt(Backbone_Angle) .* (Silhouette_Score ./ Inertia)); Backbone_Angle,Silhouette_Score,Inertia
+# 1;  2; Unitless;                                         7|sp|6|0|sub|abd; (|(Density^6) - (Mean_Distance - Sphericity)|); $\left(\left|\left(Density^6\right) - \left(Mean_{Distance} - Sphericity\right)\right|\right)$; abs((Density).^6 - (Mean_Distance - Sphericity)); Density,Mean_Distance,Sphericity
+# 2;  2; Unitless;                                         7|3|mult|6|cb|abd; (|(Density * Inertia) - (Mean_Distance^3)|); $\left(\left|\left(Density Inertia\right) - \left(Mean_{Distance}^3\right)\right|\right)$; abs((Density .* Inertia) - (Mean_Distance).^3); Density,Inertia,Mean_Distance
+# 3;  2; Unitless;                                         2|sq|5|1|mult|div; ((Silhouette_Score^2) / (Plane_Angle * Free_Volume)); $\left(\frac{ \left(Silhouette_{Score}^2\right) }{ \left(Plane_{Angle} Free_{Volume}\right) } \right)$; ((Silhouette_Score).^2 ./ (Plane_Angle .* Free_Volume)); Silhouette_Score,Plane_Angle,Free_Volume
+# Number of Samples Per Task
+# Task, n_samples               
+# all , 10                    
+
+# Sample ID , Property Value        ,  Property Value (EST) ,  Feature 0 Value      ,  Feature 1 Value      ,  Feature 2 Value      ,  Feature 3 Value      
+19.38878261 ,  1.798000000000000e+01,  1.798506173635216e+01,  1.174404334269659e-02,  8.909479246598710e-01,  2.994883819999995e+01,  4.780924082435247e-09
+14.47732143 ,  1.786000000000000e+01,  1.784470630239418e+01,  1.402996914238186e-02,  3.117264111107678e-01,  4.910244660000012e+01,  3.391546763735718e-09
+15.2355814  ,  1.880000000000000e+01,  1.876756910425411e+01,  1.133372170485437e-02,  2.013537182106218e-01,  2.223577890000001e+01,  2.374413158337322e-09
+9.6645      ,  1.851000000000000e+01,  1.851037972764500e+01,  1.394551401156862e-02,  3.833714439495886e-01,  2.727824160000000e+01,  4.129984501627174e-09
+16.30223214 ,  1.822000000000000e+01,  1.823191681456304e+01,  1.455923096159104e-02,  7.461344563676873e-01,  1.245745829999987e+01,  2.879327077699287e-09
+16.54090909 ,  1.850000000000000e+01,  1.851859334794633e+01,  1.192230167578900e-02,  1.962610037522374e-01,  3.123226899999997e+01,  2.631439560461581e-09
+16.72992248 ,  1.696000000000000e+01,  1.694444623037700e+01,  1.457685928183512e-02,  6.134470006469233e-01,  8.017185239999981e+01,  6.177478880429658e-09
+16.87173913 ,  1.734000000000000e+01,  1.735560682089194e+01,  1.065849663288773e-02,  1.074894929849712e-01,  8.970230530000003e+01,  4.919781997700100e-09
+12.35086207 ,  1.833000000000000e+01,  1.833854104314864e+01,  1.495282862638266e-02,  1.739312950900560e-01,  3.609292499999981e+01,  3.275168757797784e-09
+17.45157025 ,  1.823000000000000e+01,  1.823317887242758e+01,  1.726525842148600e-02,  1.509355798565579e-01,  3.765567500000026e+01,  3.521211049228357e-09

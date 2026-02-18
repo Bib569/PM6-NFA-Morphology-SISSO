@@ -1,0 +1,24 @@
+# c0 + a0 * (exp(-1.0 * (Plane_Angle / Silhouette_Score))) + a1 * (ln(Free_Volume) * cbrt(Sphericity))
+# Property Label: $Jsc$; Unit of the Property: Unitless
+# RMSE: 0.242359661561556; Max AE: 0.493893086348812
+# Coefficients
+# Task   a0                      a1                      c0
+# all , -8.677528717228617e+36, -2.454086420446219e+01,  2.721355163200480e+02, 
+# Feature Rung, Units, and Expressions
+# 0;  2; Unitless;                                         5|2|div|nexp; (exp(-1.0 * (Plane_Angle / Silhouette_Score))); $\left(\exp{ \left(-\left(\frac{ Plane_{Angle} }{ Silhouette_{Score} } \right) \right) } \right)$; exp(-1.0 * ((Plane_Angle ./ Silhouette_Score))); Plane_Angle,Silhouette_Score
+# 1;  2; Unitless;                                         1|log|0|cbrt|mult; (ln(Free_Volume) * cbrt(Sphericity)); $\left(\left(\ln{ Free_{Volume} }\right) \left(\sqrt[3]{ Sphericity }\right)\right)$; (log(Free_Volume) .* nthroot(Sphericity, 3)); Free_Volume,Sphericity
+# Number of Samples Per Task
+# Task, n_samples               
+# all , 10                    
+
+# Sample ID , Property Value        ,  Property Value (EST) ,  Feature 0 Value      ,  Feature 1 Value      
+19.38878261 ,  2.464000000000000e+01,  2.447907065443918e+01,  1.320085403774635e-45,  1.009159431350112e+01
+14.47732143 ,  2.467000000000000e+01,  2.492501184594382e+01,  1.081797756065032e-64,  1.007342294120003e+01
+15.2355814  ,  2.539000000000000e+01,  2.568816993420317e+01,  3.228198677547091e-86,  1.004232549972849e+01
+9.6645      ,  2.539000000000000e+01,  2.563559302018387e+01,  3.719557218359542e-47,  1.004446792280123e+01
+16.30223214 ,  2.585000000000000e+01,  2.535610691365119e+01,  4.078302198276914e-82,  1.005585652364784e+01
+16.54090909 ,  2.660000000000000e+01,  2.661672963024130e+01,  2.983124575005950e-68,  1.000448821379178e+01
+16.72992248 ,  2.533000000000000e+01,  2.532999922550706e+01,  1.206737534277460e-37,  1.001425072427035e+01
+16.87173913 ,  2.598000000000000e+01,  2.599427813234773e+01,  6.559980949114383e-42,  1.002984977271184e+01
+12.35086207 ,  2.662000000000000e+01,  2.632334096818240e+01,  4.120361980093565e-66,  1.001644332098013e+01
+17.45157025 ,  2.571000000000000e+01,  2.583169967530031e+01,  4.519870525333269e-56,  1.003647689798809e+01

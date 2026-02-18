@@ -1,0 +1,23 @@
+# c0 + a0 * ((Silhouette_Score / Free_Volume) / cbrt(Plane_Angle))
+# Property Label: $PCE$; Unit of the Property: Unitless
+# RMSE: 0.249771009427183; Max AE: 0.416366757022153
+# Coefficients
+# Task   a0                      c0
+# all , -3.444551217411555e+07,  2.187619819113963e+01, 
+# Feature Rung, Units, and Expressions
+# 0;  2; Unitless;                                         2|1|div|5|cbrt|div; ((Silhouette_Score / Free_Volume) / cbrt(Plane_Angle)); $\left(\frac{ \left(\frac{ Silhouette_{Score} }{ Free_{Volume} } \right) }{ \left(\sqrt[3]{ Plane_{Angle} }\right) } \right)$; ((Silhouette_Score ./ Free_Volume) ./ nthroot(Plane_Angle, 3)); Silhouette_Score,Free_Volume,Plane_Angle
+# Number of Samples Per Task
+# Task, n_samples               
+# all , 10                    
+
+# Sample ID , Property Value        ,  Property Value (EST) ,  Feature 0 Value      
+19.38878261 ,  1.798000000000000e+01,  1.764364179845123e+01,  1.228768604540885e-07
+14.47732143 ,  1.786000000000000e+01,  1.810522760200531e+01,  1.094763976820195e-07
+15.2355814  ,  1.880000000000000e+01,  1.865620301980544e+01,  9.348083300540636e-08
+9.6645      ,  1.851000000000000e+01,  1.809363324297785e+01,  1.098129976712679e-07
+16.30223214 ,  1.822000000000000e+01,  1.815881078828538e+01,  1.079208050112176e-07
+16.54090909 ,  1.850000000000000e+01,  1.878755856150503e+01,  8.966740323157657e-08
+16.72992248 ,  1.696000000000000e+01,  1.711976470077690e+01,  1.380857240943279e-07
+16.87173913 ,  1.734000000000000e+01,  1.765056003760957e+01,  1.226760145754332e-07
+12.35086207 ,  1.833000000000000e+01,  1.815382961264805e+01,  1.080654153050681e-07
+17.45157025 ,  1.823000000000000e+01,  1.836077063593522e+01,  1.020576363456171e-07

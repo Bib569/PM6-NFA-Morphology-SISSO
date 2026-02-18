@@ -1,0 +1,25 @@
+# c0 + a0 * (|(Inertia * Sphericity) - (Plane_Angle + Backbone_Angle)|) + a1 * (|(Plane_Angle / Backbone_Angle) - Density|) + a2 * ((Density / Free_Volume) / (Sphericity^6))
+# Property Label: $Voc$; Unit of the Property: Unitless
+# RMSE: 0.00580768232023286; Max AE: 0.0108518378778427
+# Coefficients
+# Task   a0                      a1                      a2                      c0
+# all , -8.225202784056721e-04,  3.978379967806665e-02, -8.490265045362197e+02,  1.312815899149556e+00, 
+# Feature Rung, Units, and Expressions
+# 0;  2; Unitless;                                         3|0|mult|5|4|add|abd; (|(Inertia * Sphericity) - (Plane_Angle + Backbone_Angle)|); $\left(\left|\left(Inertia Sphericity\right) - \left(Plane_{Angle} + Backbone_{Angle}\right)\right|\right)$; abs((Inertia .* Sphericity) - (Plane_Angle + Backbone_Angle)); Inertia,Sphericity,Plane_Angle,Backbone_Angle
+# 1;  2; Unitless;                                         5|4|div|7|abd; (|(Plane_Angle / Backbone_Angle) - Density|); $\left(\left|\left(\frac{ Plane_{Angle} }{ Backbone_{Angle} } \right) - Density\right|\right)$; abs((Plane_Angle ./ Backbone_Angle) - Density); Plane_Angle,Backbone_Angle,Density
+# 2;  2; Unitless;                                         7|1|div|0|sp|div; ((Density / Free_Volume) / (Sphericity^6)); $\left(\frac{ \left(\frac{ Density }{ Free_{Volume} } \right) }{ \left(Sphericity^6\right) } \right)$; ((Density ./ Free_Volume) ./ (Sphericity).^6); Density,Free_Volume,Sphericity
+# Number of Samples Per Task
+# Task, n_samples               
+# all , 10                    
+
+# Sample ID , Property Value        ,  Property Value (EST) ,  Feature 0 Value      ,  Feature 1 Value      ,  Feature 2 Value      
+19.38878261 ,  9.370000000000001e-01,  9.418131197828548e-01,  2.976859000000002e+01,  3.934000000000000e-01,  4.265690826970622e-04
+14.47732143 ,  9.280000000000000e-01,  9.191681298338115e-01,  2.392316780000002e+01,  1.416333333333335e-01,  4.471064081149886e-04
+15.2355814  ,  9.270000000000000e-01,  9.161481621221573e-01,  3.058224440000001e+01,  8.678272727272729e-01,  4.782402964491474e-04
+9.6645      ,  9.230000000000000e-01,  9.238875547826559e-01,  5.778187199999991e+00,  6.548941176470588e-01,  4.831767234797676e-04
+16.30223214 ,  8.800000000000000e-01,  8.846343049942863e-01,  5.383693160000001e+01,  2.353666666666667e-01,  4.631933212962667e-04
+16.54090909 ,  8.660000000000000e-01,  8.649706939064953e-01,  1.754595350000000e+01,  3.212727272727274e-01,  5.255368944611756e-04
+16.72992248 ,  9.080000000000000e-01,  9.169609375871116e-01,  9.956034899999992e+00,  6.670666666666668e-01,  4.878579942913809e-04
+16.87173913 ,  8.980000000000000e-01,  8.996368234363459e-01,  4.316957470000000e+01,  7.688411764705881e-01,  4.808550101557519e-04
+12.35086207 ,  8.750000000000000e-01,  8.724370203143338e-01,  3.939407739999999e+01,  2.913529411764706e-01,  4.941748886876135e-04
+17.45157025 ,  8.700000000000000e-01,  8.723432532399478e-01,  4.455551720000000e+01,  4.030000000000000e-01,  4.945166005122107e-04

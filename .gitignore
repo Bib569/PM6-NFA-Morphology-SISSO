@@ -1,0 +1,46 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Large MD trajectory files
+*.gro
+!force_fields/**/*.gro
+
+# Compiled Fortran binaries
+analysis/fortran/centroid_distance
+analysis/fortran/angles2
+*.o
+*.mod
+
+# Output plots (reproducible from scripts)
+*.png
+*.pdf
+
+# Archives
+*.zip
+*.tar.gz

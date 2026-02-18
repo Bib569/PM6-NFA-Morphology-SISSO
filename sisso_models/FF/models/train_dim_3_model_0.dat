@@ -1,0 +1,25 @@
+# c0 + a0 * (|(Mean_Distance / Plane_Angle) - ln(Mean_Distance)|) + a1 * ((Plane_Angle / Mean_Distance) / (|Mean_Distance - Plane_Angle|)) + a2 * ((Mean_Distance / Free_Volume) / (Sphericity^3))
+# Property Label: $FF$; Unit of the Property: Unitless
+# RMSE: 0.296208994267736; Max AE: 0.576448108227765
+# Coefficients
+# Task   a0                      a1                      a2                      c0
+# all , -4.416711687016814e+02, -3.112633014087646e+03, -2.082710749980925e+05,  1.414282553823901e+03, 
+# Feature Rung, Units, and Expressions
+# 0;  2; Unitless;                                         6|5|div|6|log|abd; (|(Mean_Distance / Plane_Angle) - ln(Mean_Distance)|); $\left(\left|\left(\frac{ Mean_{Distance} }{ Plane_{Angle} } \right) - \left(\ln{ Mean_{Distance} }\right)\right|\right)$; abs((Mean_Distance ./ Plane_Angle) - log(Mean_Distance)); Mean_Distance,Plane_Angle,Mean_Distance
+# 1;  2; Unitless;                                         5|6|div|6|5|abd|div; ((Plane_Angle / Mean_Distance) / (|Mean_Distance - Plane_Angle|)); $\left(\frac{ \left(\frac{ Plane_{Angle} }{ Mean_{Distance} } \right) }{ \left(\left|Mean_{Distance} - Plane_{Angle}\right|\right) } \right)$; ((Plane_Angle ./ Mean_Distance) ./ abs(Mean_Distance - Plane_Angle)); Plane_Angle,Mean_Distance,Mean_Distance,Plane_Angle
+# 2;  2; Unitless;                                         6|1|div|0|cb|div; ((Mean_Distance / Free_Volume) / (Sphericity^3)); $\left(\frac{ \left(\frac{ Mean_{Distance} }{ Free_{Volume} } \right) }{ \left(Sphericity^3\right) } \right)$; ((Mean_Distance ./ Free_Volume) ./ (Sphericity).^3); Mean_Distance,Free_Volume,Sphericity
+# Number of Samples Per Task
+# Task, n_samples               
+# all , 10                    
+
+# Sample ID , Property Value        ,  Property Value (EST) ,  Feature 0 Value      ,  Feature 1 Value      ,  Feature 2 Value      
+19.38878261 ,  7.816000000000000e+01,  7.758355189177223e+01,  2.017433913499871e+00,  1.342743278227149e-01,  1.330472887465407e-04
+14.47732143 ,  7.827000000000000e+01,  7.881691507631716e+01,  2.048447291909075e+00,  1.294825495686459e-01,  1.329703165499773e-04
+15.2355814  ,  8.006999999999999e+01,  8.026464258533981e+01,  2.044213200346590e+00,  1.297774317046266e-01,  1.305911517429951e-04
+9.6645      ,  7.948999999999999e+01,  7.962344204038556e+01,  1.973705707437554e+00,  1.401422638020725e-01,  1.282884256842932e-04
+16.30223214 ,  8.008000000000000e+01,  7.989515481163747e+01,  2.040810209068089e+00,  1.302176113381412e-01,  1.330032641755909e-04
+16.54090909 ,  8.030000000000000e+01,  8.012661030713062e+01,  2.025581877456653e+00,  1.324490200236428e-01,  1.308373521894356e-04
+16.72992248 ,  7.404000000000001e+01,  7.432009163161064e+01,  1.987507249932134e+00,  1.388855219671442e-01,  1.432659405932624e-04
+16.87173913 ,  7.484999999999999e+01,  7.477170129198386e+01,  1.988498452412678e+00,  1.387525539930336e-01,  1.409827876765797e-04
+12.35086207 ,  7.840000000000001e+01,  7.820367480807607e+01,  2.035458427096610e+00,  1.311592378074373e-01,  1.384013741449244e-04
+17.45157025 ,  8.150000000000000e+01,  8.155421555574962e+01,  1.999913864736190e+00,  1.360102062058737e-01,  1.251935067718336e-04

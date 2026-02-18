@@ -1,0 +1,24 @@
+# c0 + a0 * (|(Inertia * Sphericity) - (Plane_Angle + Backbone_Angle)|) + a1 * ((Density / Free_Volume) / (Sphericity^6))
+# Property Label: $Voc$; Unit of the Property: Unitless
+# RMSE: 0.0106588493188963; Max AE: 0.0265987018790673
+# Coefficients
+# Task   a0                      a1                      c0
+# all , -9.634329003099568e-04, -8.013971500411577e+02,  1.313125649150398e+00, 
+# Feature Rung, Units, and Expressions
+# 0;  2; Unitless;                                         3|0|mult|5|4|add|abd; (|(Inertia * Sphericity) - (Plane_Angle + Backbone_Angle)|); $\left(\left|\left(Inertia Sphericity\right) - \left(Plane_{Angle} + Backbone_{Angle}\right)\right|\right)$; abs((Inertia .* Sphericity) - (Plane_Angle + Backbone_Angle)); Inertia,Sphericity,Plane_Angle,Backbone_Angle
+# 1;  2; Unitless;                                         7|1|div|0|sp|div; ((Density / Free_Volume) / (Sphericity^6)); $\left(\frac{ \left(\frac{ Density }{ Free_{Volume} } \right) }{ \left(Sphericity^6\right) } \right)$; ((Density ./ Free_Volume) ./ (Sphericity).^6); Density,Free_Volume,Sphericity
+# Number of Samples Per Task
+# Task, n_samples               
+# all , 10                    
+
+# Sample ID , Property Value        ,  Property Value (EST) ,  Feature 0 Value      ,  Feature 1 Value      
+19.38878261 ,  9.370000000000001e-01,  9.425943629794632e-01,  2.976859000000002e+01,  4.265690826970622e-04
+14.47732143 ,  9.280000000000000e-01,  9.317674809837513e-01,  2.392316780000002e+01,  4.471064081149886e-04
+15.2355814  ,  9.270000000000000e-01,  9.004012981209327e-01,  3.058224440000001e+01,  4.782402964491474e-04
+9.6645      ,  9.230000000000000e-01,  9.203423043348576e-01,  5.778187199999991e+00,  4.831767234797676e-04
+16.30223214 ,  8.800000000000000e-01,  8.900555703902946e-01,  5.383693160000001e+01,  4.631933212962667e-04
+16.54090909 ,  8.660000000000000e-01,  8.750575308185222e-01,  1.754595350000000e+01,  5.255368944611756e-04
+16.72992248 ,  9.080000000000000e-01,  9.125656713211957e-01,  9.956034899999992e+00,  4.878579942913809e-04
+16.87173913 ,  8.980000000000000e-01,  8.861788258701979e-01,  4.316957470000000e+01,  4.808550101557519e-04
+12.35086207 ,  8.750000000000000e-01,  8.791417514897210e-01,  3.939407739999999e+01,  4.941748886876135e-04
+17.45157025 ,  8.700000000000000e-01,  8.738952036910642e-01,  4.455551720000000e+01,  4.945166005122107e-04

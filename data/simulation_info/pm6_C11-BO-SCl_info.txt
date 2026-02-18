@@ -1,0 +1,4 @@
+No of Polymer - 500
+No of NFA - 600
+Atom no in polymer - 314
+Atom no in NFA - 205

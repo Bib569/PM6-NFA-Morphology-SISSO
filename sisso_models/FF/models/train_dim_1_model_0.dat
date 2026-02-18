@@ -1,0 +1,23 @@
+# c0 + a0 * ((Mean_Distance / Free_Volume) / ln(Plane_Angle))
+# Property Label: $FF$; Unit of the Property: Unitless
+# RMSE: 0.834999040080874; Max AE: 1.67527352487667
+# Coefficients
+# Task   a0                      c0
+# all , -1.185427504188362e+07,  9.562259043970140e+01, 
+# Feature Rung, Units, and Expressions
+# 0;  2; Unitless;                                         6|1|div|5|log|div; ((Mean_Distance / Free_Volume) / ln(Plane_Angle)); $\left(\frac{ \left(\frac{ Mean_{Distance} }{ Free_{Volume} } \right) }{ \left(\ln{ Plane_{Angle} }\right) } \right)$; ((Mean_Distance ./ Free_Volume) ./ log(Plane_Angle)); Mean_Distance,Free_Volume,Plane_Angle
+# Number of Samples Per Task
+# Task, n_samples               
+# all , 10                    
+
+# Sample ID , Property Value        ,  Property Value (EST) ,  Feature 0 Value      
+19.38878261 ,  7.816000000000000e+01,  7.648472647512332e+01,  1.614427191621589e-06
+14.47732143 ,  7.827000000000000e+01,  7.852670686481162e+01,  1.442170315307049e-06
+15.2355814  ,  8.006999999999999e+01,  8.071345985593558e+01,  1.257700747712429e-06
+9.6645      ,  7.948999999999999e+01,  7.879480209681844e+01,  1.419554404080121e-06
+16.30223214 ,  8.008000000000000e+01,  7.929580515136918e+01,  1.377290912404705e-06
+16.54090909 ,  8.030000000000000e+01,  8.120695444569365e+01,  1.216070653251616e-06
+16.72992248 ,  7.404000000000001e+01,  7.516641032977546e+01,  1.725637378722022e-06
+16.87173913 ,  7.484999999999999e+01,  7.532609109085104e+01,  1.712167068600872e-06
+12.35086207 ,  7.840000000000001e+01,  7.861673196659771e+01,  1.434576000052171e-06
+17.45157025 ,  8.150000000000000e+01,  8.102831172302406e+01,  1.231140551835748e-06

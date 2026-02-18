@@ -1,0 +1,26 @@
+# c0 + a0 * (|(Backbone_Angle / Mean_Distance) - (Plane_Angle - Backbone_Angle)|) + a1 * (|(Backbone_Angle + Silhouette_Score) - (|Mean_Distance - Plane_Angle|)|) + a2 * (exp(-1.0 * (Plane_Angle / Silhouette_Score))) + a3 * ((Sphericity^6) * (Free_Volume / Density))
+# Property Label: $Jsc$; Unit of the Property: Unitless
+# RMSE: 0.0588975805492605; Max AE: 0.119203881712945
+# Coefficients
+# Task   a0                      a1                      a2                      a3                      c0
+# all , -4.514160046327407e-01,  4.624159423323425e-01, -1.032417413841300e+37, -7.736193192337816e-03,  4.194809706804970e+01, 
+# Feature Rung, Units, and Expressions
+# 0;  2; Unitless;                                         4|6|div|5|4|sub|abd; (|(Backbone_Angle / Mean_Distance) - (Plane_Angle - Backbone_Angle)|); $\left(\left|\left(\frac{ Backbone_{Angle} }{ Mean_{Distance} } \right) - \left(Plane_{Angle} - Backbone_{Angle}\right)\right|\right)$; abs((Backbone_Angle ./ Mean_Distance) - (Plane_Angle - Backbone_Angle)); Backbone_Angle,Mean_Distance,Plane_Angle,Backbone_Angle
+# 1;  2; Unitless;                                         4|2|add|6|5|abd|abd; (|(Backbone_Angle + Silhouette_Score) - (|Mean_Distance - Plane_Angle|)|); $\left(\left|\left(Backbone_{Angle} + Silhouette_{Score}\right) - \left(\left|Mean_{Distance} - Plane_{Angle}\right|\right)\right|\right)$; abs((Backbone_Angle + Silhouette_Score) - abs(Mean_Distance - Plane_Angle)); Backbone_Angle,Silhouette_Score,Mean_Distance,Plane_Angle
+# 2;  2; Unitless;                                         5|2|div|nexp; (exp(-1.0 * (Plane_Angle / Silhouette_Score))); $\left(\exp{ \left(-\left(\frac{ Plane_{Angle} }{ Silhouette_{Score} } \right) \right) } \right)$; exp(-1.0 * ((Plane_Angle ./ Silhouette_Score))); Plane_Angle,Silhouette_Score
+# 3;  2; Unitless;                                         0|sp|1|7|div|mult; ((Sphericity^6) * (Free_Volume / Density)); $\left(\left(Sphericity^6\right) \left(\frac{ Free_{Volume} }{ Density } \right)\right)$; ((Sphericity).^6 .* (Free_Volume ./ Density)); Sphericity,Free_Volume,Density
+# Number of Samples Per Task
+# Task, n_samples               
+# all , 10                    
+
+# Sample ID , Property Value        ,  Property Value (EST) ,  Feature 0 Value      ,  Feature 1 Value      ,  Feature 2 Value      ,  Feature 3 Value      
+19.38878261 ,  2.464000000000000e+01,  2.465081656144427e+01,  7.575757575757576e+00,  9.209000000000003e+00,  1.320085403774635e-45,  2.344286167383052e+03
+14.47732143 ,  2.467000000000000e+01,  2.463822583362787e+01,  1.115566037735849e+01,  1.087500000000000e+01,  1.081797756065032e-64,  2.236604042907871e+03
+15.2355814  ,  2.539000000000000e+01,  2.544259456421754e+01,  6.333333333333334e+01,  6.111500000000000e+01,  3.228198677547091e-86,  2.090999038401467e+03
+9.6645      ,  2.539000000000000e+01,  2.550920388171295e+01,  3.041666666666666e+01,  2.876800000000000e+01,  3.719557218359542e-47,  2.069636121537783e+03
+16.30223214 ,  2.585000000000000e+01,  2.580549575913995e+01,  4.087591240875913e+01,  4.111300000000000e+01,  4.078302198276914e-82,  2.158925774666734e+03
+16.54090909 ,  2.660000000000000e+01,  2.656298863634588e+01,  3.334945586457074e+01,  3.111900000000001e+01,  2.983124575005950e-68,  1.902815978363010e+03
+16.72992248 ,  2.533000000000000e+01,  2.533000413447613e+01,  2.880281690140845e+01,  2.916700000000000e+01,  1.206737534277460e-37,  2.049776803293981e+03
+16.87173913 ,  2.598000000000000e+01,  2.590394162893237e+01,  3.996483001172333e+01,  3.911000000000000e+01,  6.559980949114383e-42,  2.079628950265266e+03
+12.35086207 ,  2.662000000000000e+01,  2.668431085618936e+01,  1.674641148325371e-01,  1.009000000000000e+00,  4.120361980093565e-66,  2.023575100417815e+03
+17.45157025 ,  2.571000000000000e+01,  2.565241814391367e+01,  1.045510455104551e+01,  8.796999999999997e+00,  4.519870525333269e-56,  2.022176806530295e+03

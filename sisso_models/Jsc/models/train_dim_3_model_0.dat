@@ -1,0 +1,25 @@
+# c0 + a0 * ((Inertia * Free_Volume) / ln(Silhouette_Score)) + a1 * (|(Inertia * Sphericity) - (Plane_Angle + Backbone_Angle)|) + a2 * ((Density / Free_Volume) / (Sphericity^6))
+# Property Label: $Jsc$; Unit of the Property: Unitless
+# RMSE: 0.152814841512327; Max AE: 0.277876133279904
+# Coefficients
+# Task   a0                      a1                      a2                      c0
+# all ,  3.744042794645748e-09,  2.643314493830391e-02,  2.140499021222112e+04,  1.897449756111861e+01, 
+# Feature Rung, Units, and Expressions
+# 0;  2; Unitless;                                         3|1|mult|2|log|div; ((Inertia * Free_Volume) / ln(Silhouette_Score)); $\left(\frac{ \left(Inertia Free_{Volume}\right) }{ \left(\ln{ Silhouette_{Score} }\right) } \right)$; ((Inertia .* Free_Volume) ./ log(Silhouette_Score)); Inertia,Free_Volume,Silhouette_Score
+# 1;  2; Unitless;                                         3|0|mult|5|4|add|abd; (|(Inertia * Sphericity) - (Plane_Angle + Backbone_Angle)|); $\left(\left|\left(Inertia Sphericity\right) - \left(Plane_{Angle} + Backbone_{Angle}\right)\right|\right)$; abs((Inertia .* Sphericity) - (Plane_Angle + Backbone_Angle)); Inertia,Sphericity,Plane_Angle,Backbone_Angle
+# 2;  2; Unitless;                                         7|1|div|0|sp|div; ((Density / Free_Volume) / (Sphericity^6)); $\left(\frac{ \left(\frac{ Density }{ Free_{Volume} } \right) }{ \left(Sphericity^6\right) } \right)$; ((Density ./ Free_Volume) ./ (Sphericity).^6); Density,Free_Volume,Sphericity
+# Number of Samples Per Task
+# Task, n_samples               
+# all , 10                    
+
+# Sample ID , Property Value        ,  Property Value (EST) ,  Feature 0 Value      ,  Feature 1 Value      ,  Feature 2 Value      
+19.38878261 ,  2.464000000000000e+01,  2.445251480742142e+01, -1.185768296797195e+09,  2.976859000000002e+01,  4.265690826970622e-04
+14.47732143 ,  2.467000000000000e+01,  2.478784341076693e+01, -1.172349581044366e+09,  2.392316780000002e+01,  4.471064081149886e-04
+15.2355814  ,  2.539000000000000e+01,  2.536563664083696e+01, -1.243034585578119e+09,  3.058224440000001e+01,  4.782402964491474e-04
+9.6645      ,  2.539000000000000e+01,  2.530475637797000e+01, -1.112399111917319e+09,  5.778187199999991e+00,  4.831767234797676e-04
+16.30223214 ,  2.585000000000000e+01,  2.577811866501795e+01, -1.211018962527324e+09,  5.383693160000001e+01,  4.631933212962667e-04
+16.54090909 ,  2.660000000000000e+01,  2.637397346040135e+01, -1.152078422002701e+09,  1.754595350000000e+01,  5.255368944611756e-04
+16.72992248 ,  2.533000000000000e+01,  2.560787613327990e+01, -1.087697592545115e+09,  9.956034899999992e+00,  4.878579942913809e-04
+16.87173913 ,  2.598000000000000e+01,  2.612132940061428e+01, -1.145011637550301e+09,  4.316957470000000e+01,  4.808550101557519e-04
+12.35086207 ,  2.662000000000000e+01,  2.654528681199252e+01, -1.081272032473637e+09,  3.939407739999999e+01,  4.941748886876135e-04
+17.45157025 ,  2.571000000000000e+01,  2.584266429169864e+01, -1.307329797114814e+09,  4.455551720000000e+01,  4.945166005122107e-04
