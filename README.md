@@ -139,8 +139,44 @@ Production trajectory files (`.gro`, ~20 MB each) are not included in this repos
 
 ## Citation
 
-If you use this data or code, please cite the associated publication.
+If you use this code or data in your research, please cite:
+
+```bibtex
+@article{das2025morphology,
+  author = {Das, Bibhas and Mondal, Anirban},
+  title = {Interpretable Morphology--Property Relationships in PM6:NFA Organic Solar Cells via MD Simulations and Symbolic Regression},
+  journal = {},
+  year = {2025},
+  volume = {},
+  pages = {},
+  doi = {},
+  publisher = {}
+}
+```
 
 ## License
 
 This project is licensed under the MIT License — see [LICENSE](LICENSE) for details.
+
+## Contact
+
+For questions, issues, or collaborations:
+
+- **Anirban Mondal** (Principal Investigator): amondal@iitgn.ac.in
+- **Bibhas Das** (Lead Developer): dasbibhas@iitgn.ac.in
+
+**GitHub Issues**: [Open an issue](https://github.com/Bib569/PM6-NFA-Morphology-SISSO/issues)
+
+## Acknowledgments
+
+We gratefully acknowledge:
+
+- **Indian Institute of Technology Gandhinagar** for research facilities and financial support
+- **PARAM Ananta** for computational resources
+- The open-source communities behind GROMACS, SISSO++, Sobtop, Multiwfn, and Python scientific libraries
+
+---
+
+<p align="center">
+  <i>Advancing interpretable morphology–property relationships for next-generation organic photovoltaics</i>
+</p>
