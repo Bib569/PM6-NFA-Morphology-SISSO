@@ -133,9 +133,9 @@ Production trajectory files (`.gro`, ~20 MB each) are not included in this repos
 
 - **MD Simulations:** GROMACS 2023
 - **Force Field Generation:** Sobtop v1.0, ORCA 5.0
-- **Charge Analysis:** Multiwfn (DDEC6)
+- **Charge Analysis:** DDEC6
 - **Symbolic Regression:** SISSO++ 
-- **Analysis:** Python 3.9+ (NumPy, Pandas, Matplotlib, Seaborn, Scikit-learn, SHAP)
+- **Analysis:** Multiwfn, Fortran, Python 3.9+ (NumPy, Pandas, Matplotlib, Seaborn, Scikit-learn, SHAP)
 
 ## Citation
 
